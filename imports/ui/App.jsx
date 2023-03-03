@@ -3,6 +3,7 @@ import { Box, Grid } from '@mui/material';
 import { Sidebar } from './components/Sidebar';
 import { styled, createTheme, ThemeProvider } from '@mui/material/styles';
 import Paper from '@mui/material/Paper';
+import { Config } from './components/Configuration';
 
 const mdTheme = createTheme();
 
@@ -34,7 +35,7 @@ export const App = () => (
       <Sidebar />
       <GridContainer container>
         <Grid item xs={12}>
-          <Item style={{ height: '90%' }}>Configurador</Item>
+          <Item style={{ height: '90%' }}><Config /></Item>
         </Grid>
         <Grid item xs={12}>
           <Item style={{ height: '100%', alignItems: 'center' }}><p>Visor</p></Item>
