@@ -30,8 +30,8 @@ export const Sidebar = () => {
 
     const handleListItemClick = (event, index) => {
         setSelectedIndex(index);
-        /*Session.set('chartIndex', index);
-        console.log(Session.get('chartIndex'));*/
+        Session.set('chartIndex', index);
+        console.log(Session.get('chartIndex'));
     };
 
 
@@ -47,7 +47,8 @@ export const Sidebar = () => {
             }}
             variant="permanent"
             anchor="left"
-        >        <Toolbar >Gráficas</Toolbar>
+        >
+            <Toolbar >Gráficas</Toolbar>
             <Divider />
             <List>
 
