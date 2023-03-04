@@ -40,7 +40,7 @@ export const App = () => (
           <Item style={{ height: '30vh' }}><Config /></Item>
         </Grid>
         <Grid item xs={12}>
-          <Item style={{ height: '50vh', alignItems: 'center' }}><p>Visor</p></Item>
+          <Item style={{ height: '55vh', alignItems: 'center' }}><p>Visor</p></Item>
         </Grid>
       </GridContainer>
     </Box>

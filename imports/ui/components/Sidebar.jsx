@@ -29,8 +29,8 @@ export const Sidebar = () => {
     const [selectedIndex, setSelectedIndex] = React.useState();
 
     const handleListItemClick = (event, index) => {
-        setSelectedIndex(index);
         Session.set('chartIndex', index);
+        setSelectedIndex(index);
         console.log(Session.get('chartIndex'));
     };
 
@@ -43,12 +43,12 @@ export const Sidebar = () => {
                 '& .MuiDrawer-paper': {
                     width: drawerWidth,
                     boxSizing: 'border-box',
-                },
+                }
             }}
             variant="permanent"
             anchor="left"
         >
-            <Toolbar >Gráficas</Toolbar>
+            <Toolbar sx={{ margin: '1vh auto' }}><p>Gráficas</p></Toolbar>
             <Divider />
             <List>
 
@@ -58,7 +58,8 @@ export const Sidebar = () => {
                             selected={selectedIndex === index}
                             onClick={(event) => handleListItemClick(event, index)}
                         >
-                            <ListItemText primary={text} />
+                            <ListItemText primary={text}
+                                sx={{ margin: '1vh 3vh' }} />
                         </ListItemButton>
 
                     </ListItem>
