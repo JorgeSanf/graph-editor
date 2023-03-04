@@ -19,15 +19,17 @@ const Item = styled(Paper)(({ theme }) => ({
   padding: theme.spacing(1),
   textAlign: 'center',
   color: theme.palette.text.secondary,
-  height: '100%',
+  margin: '1vh'
+  //height: '10%',
 }));
 
 const GridContainer = styled(Grid)(({ theme }) => ({
   flexGrow: 1,
-  height: '90vh',
+  //height: '50vh',
   margin: theme.spacing(2),
-  spacing: 2
+  spacing: 2 // set spacing to 0
 }));
+
 
 export const App = () => (
   <ThemeProvider theme={darkTheme}>
@@ -35,10 +37,10 @@ export const App = () => (
       <Sidebar />
       <GridContainer container>
         <Grid item xs={12}>
-          <Item style={{ height: '90%' }}><Config /></Item>
+          <Item style={{ height: '30vh' }}><Config /></Item>
         </Grid>
         <Grid item xs={12}>
-          <Item style={{ height: '100%', alignItems: 'center' }}><p>Visor</p></Item>
+          <Item style={{ height: '50vh', alignItems: 'center' }}><p>Visor</p></Item>
         </Grid>
       </GridContainer>
     </Box>
