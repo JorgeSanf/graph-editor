@@ -1,0 +1,12 @@
+[
+    {
+        "A": {
+            "Toggle": false
+        }
+    },
+    {
+        "B": {
+            "Toggle": true
+        }
+    }
+]
