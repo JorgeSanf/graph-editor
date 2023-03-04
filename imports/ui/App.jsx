@@ -5,7 +5,7 @@ import { styled, createTheme, ThemeProvider } from '@mui/material/styles';
 import Paper from '@mui/material/Paper';
 import { Config } from './components/Configuration';
 
-const mdTheme = createTheme();
+//const mdTheme = createTheme();
 
 const darkTheme = createTheme({
   palette: {
@@ -27,7 +27,7 @@ const GridContainer = styled(Grid)(({ theme }) => ({
   flexGrow: 1,
   //height: '50vh',
   margin: theme.spacing(2),
-  spacing: 2 // set spacing to 0
+  //spacing: 2 // set spacing to 0
 }));
 
 

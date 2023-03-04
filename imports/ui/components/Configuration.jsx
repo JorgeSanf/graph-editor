@@ -61,7 +61,7 @@ export const Config = () => {
             <Typography gutterBottom variant="body1">
                 Select type
             </Typography>
-            <Box sx={{ m: 2, display: "flex" }}>
+            <Box sx={{ m: 2, display: "flex", alignItems: "center" }}>
                 {menu ? <Toggle /> : ''}
                 <Slider
                     defaultValue={50}

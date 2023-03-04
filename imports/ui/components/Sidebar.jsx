@@ -12,7 +12,7 @@ import Paper from '@mui/material/Paper';
 
 import { Session } from 'meteor/session';
 
-const drawerWidth = '30vh';
+const drawerWidth = '35vh';
 
 const Item = styled(Paper)(({ theme }) => ({
     backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
