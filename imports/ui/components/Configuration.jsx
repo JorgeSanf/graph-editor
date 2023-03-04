@@ -52,17 +52,17 @@ export const Config = () => {
     const chartIndex = useTracker(() => Session.get('chartIndex'));
 
     React.useEffect(() => {
-        setMenu(chartIndex);
+        if (chartIndex != undefined) setMenu(retrieveOptions(chartIndex));
     }, [chartIndex]);
 
     return (
         <Grid>
 
             <Typography gutterBottom variant="body1">
-                Select type
+                chartIndex
             </Typography>
             <Box sx={{ m: 2, display: "flex", alignItems: "center" }}>
-                {menu ? <Toggle /> : ''}
+                {menu.Toggle ? <Toggle /> : ''}
                 <Slider
                     defaultValue={50}
                     aria-label="Default"
@@ -74,12 +74,9 @@ export const Config = () => {
     );
 };
 
-/*function retrieveOptions() {
-    const chartIndex = Session.get('chartIndex');
-    console.log(chartIndex);
+function retrieveOptions(chartIndex) {
+    //const chartIndex = Session.get('chartIndex');
     const mock = require('./../../../tests/mock.json');
-    console.log(mock);
     const charType = mock[chartIndex];
-    console.log(charType);
-    return charType;
-}*/
+    return charType[Object.keys(charType)[0]];
+}
