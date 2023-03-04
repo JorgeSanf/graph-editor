@@ -59,7 +59,7 @@ export const Config = () => {
         <Grid>
 
             <Typography gutterBottom variant="body1">
-                chartIndex
+                Opciones
             </Typography>
             <Box sx={{ m: 2, display: "flex", alignItems: "center" }}>
                 {menu.Toggle ? <Toggle /> : ''}

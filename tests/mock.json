@@ -8,5 +8,10 @@
         "B": {
             "Toggle": true
         }
+    },
+    {
+        "C": {
+            "Toggle": true
+        }
     }
 ]
